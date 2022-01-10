@@ -1,0 +1,200 @@
+﻿<Window x:Class="HomeWork15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeWork15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="250" HorizontalAlignment="Right" >
+                        <BlockUIContainer>
+                            <Image Source="Data/1.png" Height="171"  />
+                        </BlockUIContainer>
+                    </Floater>
+                    <Underline>
+                        <Bold>
+                            <Run FontSize="44">Боливия</Run>
+                        </Bold>
+                    </Underline>
+                </Paragraph>
+                <Paragraph>
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D0%B8%D0%B2%D0%B8%D1%8F">Материал из энциклопедии</Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    <Italic>
+                        <Bold>Боливия</Bold>
+                    </Italic>
+                    (исп. Bolivia, кечуа Buliwya, айм. Wuliwya, гуар. Volívia), официальное название — Многонациона́льное Госуда́рство Боли́вия (исп. Estado Plurinacional de Bolivia [esˈtaðo pluɾinasjoˈnal de βoˈliβja]) — государство в центральной части Южной Америки.
+                    <!--<Span Background="RosyBrown">
+                        
+                        <Bold>Данный</Bold>
+                        <Italic>рецепт</Italic>
+                        <Underline>порекомендовал</Underline>
+                        <Run Foreground="Red">повар из армянского ресторана,</Run>
+                    </Span>
+                    с его слов это самый правильный шашлык.-->
+                </Paragraph>
+
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Официальные языки - испанский, кечуа, аймара, гуарани и ещё 33 языка.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Столица - Сукре
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Крупнейшие города - Санта-Крус-де-ла-Сьерра, Эль-Альто, Ла-Пас, Кочабамба
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Территория - 1 098 581 км²
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Население - 11 639 909 чел
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Плотность - 10,6 чел./км²
+                        </Paragraph>
+                    </ListItem>
+                    <!--<ListItem>
+                        <Paragraph>
+                            Форма правления - президентская республика
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Президент - Луис Арсе
+                        </Paragraph>
+                    </ListItem>-->
+                </List>
+
+                <Section FontSize="14">
+                    <Table>
+                        <Table.Columns>
+                            <TableColumn Width="0.1*"/>
+                            <TableColumn  Width="0.4*"/>
+                            <TableColumn  Width="2*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <!--Перва строка-->
+                                <TableCell>
+                                    <Paragraph>
+                                        №
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Наименование
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Описание
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <!--Вторая строка-->
+                                <TableCell>
+                                    <Paragraph>
+                                        1
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Этимология
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Наименование страны Боливия (исп. Bolivia) устоялось в первые десятилетия её независимости. На Генеральной ассамблее депутатов провинций Верхнего Перу  (исп.)рус. 6 августа 1825 года была провозглашена независимость Верхнего Перу (исп. Alto Perú), 11 августа 1825 года в честь Симона Боливара, возглавляющего Объединённую армию Освободителя Перу  (исп.)рус., была провозглашена Республика Боливар (исп. República Bolívar), с возможным использованием наименований Верхнее Перу и Государство Верхнего Перу (исп. Estado del Alto Perú). Предлагая название страны, конгрессмен Мануэль Мартин Круз заявил: «Если от Ромула произошёл Рим, то от Боливара произойдёт Боливия» (исп. Si de Rómulo Roma, de Bolívar Bolivia). После начала работы 25 мая 1826 года Всеобщего учредительного конгресса (исп. Congreso General Constituyente) стало использоваться наименование Республика Боливиана (исп. República Boliviana), или Боливия. Только с 1 октября 1868 года официальным наименованием страны стало Республика Боливия (исп. República de Bolivia)
+
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <!--Третья строка-->
+                                <TableCell>
+                                    <Paragraph>
+                                        2
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Географические данные
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Площадь Боливии составляет 1 098 580 км². Она занимает 27 место в списке стран по площади после Эфиопии. Цвета боливийской Альтиплано
+Боливия не имеет выхода к морю с 1879 года, когда она потеряла прибрежную область Антофагаста в Тихоокеанской войне с Чили. Однако выход в Атлантический океан у Боливии есть — по реке Парагвай, а 20 октября 2010 года Боливия и Перу заключили договор аренды, по которому на 99 лет Боливии передаётся небольшой участок берега для строительства порта. Таким образом, спустя 127 лет Боливия вновь получила доступ и к Тихому океану[7].
+На территории Боливии представлено огромное разнообразие экологических зон. Западные высокогорья страны расположены в Андах, в том числе плато Альтиплано. Восточные низкие равнины включают в себя большие районы амазонских тропических лесов и Чако. Самая высокая точка страны — потухший вулкан Сахама (6542 м), расположенный в департаменте Оруро. Озеро Титикака расположено на границе Боливии и Перу. Самый крупный в мире солончак Уюни расположен в юго-западной части страны, в департаменте Потоси.
+Наиболее крупные города Боливии: Ла-Пас, Эль-Альто, Санта-Крус-де-ла-Сьерра и Кочабамба.
+Боливия имеет сухопутные границы с пятью странами: Аргентиной — 832 километра, Бразилией — 3423 километра, Чили — 860 километров, Парагваем — 750 километров, и Перу — 1075 километров.
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <!--Четвертая строка-->
+                                <TableCell>
+                                    <Paragraph>
+                                        3
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Экономика
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+
+                                        Боливия — слаборазвитое аграрное государство. ВВП на душу населения в 2010 году — 4,8 тыс. долл. (150-е место в мире). Безработица — 8,5 % (в 2009), ниже уровня бедности — 60 % населения (в 2006).
+
+Боливия обладает вторыми по величине запасами природного газа в Южной Америке после Венесуэлы и богата другими полезными ископаемыми, тем не менее она остаётся беднейшим государством континента (по данным МВФ, за чертой бедности находится около 70 % населения страны).
+Стоит отметить ускорившийся рост минимальной заработной платы, учитывая, что в предыдущие десятилетия (1990-е и 2000-е) минимальная заработная плата, боливийским рабочим, была самой низкой в Южной Америке ниже $ 100 месяц. На 2017 год минимальный размер оплаты труда в Боливии выше, чем в России, Казахстане, Перу, Колумбии, Мексике и Венесуэле. В настоящее время Боливия является ведущей страной в Латинской Америке, которая в течение этого десятилетия увеличила реальную минимальную заработную плату без высокой инфляции. С 2018 года Минимальный размер оплаты труда в Боливии составляет Bs 2060 ($ 298,38) Сельское хозяйство (11 % ВВП, 40 % работающих) — соя, кофе, кока, хлопчатник, кукуруза, сахарный тростник, рис, картофель; лесозаготовки.
+Животноводство: крупный рогатый скот, овцеводство.
+Промышленность (37 % ВВП, 17 % работающих) — добыча олова и нефти, пищевая промышленность, табак, ручные ремёсла, одежда. Страна обладает богатыми природными ресурсами — олово, газ, нефть, цинк, вольфрам, сурьма, серебро, железо, литий[34], свинец, золото, лес, гидроэнергетические ресурсы.
+Сфера обслуживания — 52 % ВВП, 43 % работающих.
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Нажмите если хотите посетить страну! "/>
+                        <Button Content="Уже лечу!" />
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
